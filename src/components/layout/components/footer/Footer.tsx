@@ -52,7 +52,7 @@ const Footer = () => {
                 width={16}
                 height={6}
               />
-              <span>hi@ratepunk.com</span>
+              <span className={styles.email}>hi@ratepunk.com</span>
             </div>
           </div>
           <div>

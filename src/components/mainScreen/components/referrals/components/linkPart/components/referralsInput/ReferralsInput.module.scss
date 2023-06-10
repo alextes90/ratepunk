@@ -1,0 +1,49 @@
+@import "../../../../../../../../styles/colors.scss";
+@import "../../../../../../../../styles/variables.scss";
+.wrapper {
+  form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 64px;
+    img {
+      position: absolute;
+      left: 20px;
+      top: 24px;
+    }
+    input {
+      border: solid 1px $text-color-main;
+      border-radius: 8px;
+      width: 100%;
+      height: 64px;
+      padding-left: 56px;
+      font-size: 20px;
+    }
+    button {
+      width: 100%;
+      height: 64px;
+      border: solid 1px $text-color-main;
+      background-color: $active-color;
+      border-radius: 8px;
+      color: #ffffff;
+      font-size: 20px;
+    }
+    @media only screen and (max-width: $mobile-screen) {
+      margin-top: 24px;
+      input {
+        height: 56px;
+        padding-left: 52px;
+        font-size: 16px;
+      }
+      img {
+        left: 16px;
+        top: 21px;
+      }
+      button {
+        height: 56px;
+        font-size: 16px;
+      }
+    }
+  }
+}

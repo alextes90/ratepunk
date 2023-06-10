@@ -1,4 +1,5 @@
 import { caveat_brush } from "@/fonts/Fonts";
+import ReferralsInput from "./components/referralsInput/ReferralsInput";
 import styles from "./LinkPart.module.scss";
 const LinkPart = () => {
   return (
@@ -13,7 +14,7 @@ const LinkPart = () => {
             We&rsquo;ll give you 1 coin for each friend that installs our
             extension. Minimum cash-out at 20 coins.
           </p>
-          <input />
+          <ReferralsInput />
         </div>
         <div className={styles.limits}>Limits on max rewards apply.</div>
       </div>
