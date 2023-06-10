@@ -1,0 +1,49 @@
+@import "../../../../styles/colors.scss";
+
+.container {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0px;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  backdrop-filter: blur(8px);
+
+  header {
+    height: 235px;
+    background-color: #ffffff;
+    border-bottom: solid 1px $text-color-main;
+    animation: slidein 0.5s;
+  }
+
+  nav {
+    margin-top: 30px;
+    padding: 0px 16px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      li {
+        height: 40px;
+      }
+    }
+  }
+
+  .upper_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 16px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(-200px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/colors.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  height: 80px;
+  border-bottom: solid 1px $text-color-main;
+  background-color: #ffffff;
+  @media only screen and (max-width: $mobile-screen) {
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    height: 56px;
+  }
+}
+
+.container {
+  max-width: $max-width;
+  width: 100%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 55px;
+      @media only screen and (max-width: $mobile-screen) {
+        display: none;
+      }
+    }
+  }
+}
+
+.burger_menu {
+  display: flex;
+  align-items: center;
+
+  @media only screen and (min-width: calc($mobile-screen + 1px)) {
+    display: none;
+  }
+}

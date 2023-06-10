@@ -1,0 +1,16 @@
+@import "../../../../../../styles/colors.scss";
+
+.container {
+  a {
+    text-decoration: none;
+    color: $text-color-header;
+    font-size: 20px;
+    transition: all 0.3s;
+    &:active {
+      text-decoration: none;
+    }
+    &:hover {
+      color: $active-color;
+    }
+  }
+}
