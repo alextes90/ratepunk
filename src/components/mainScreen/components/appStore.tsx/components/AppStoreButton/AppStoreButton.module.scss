@@ -1,0 +1,30 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/variables.scss";
+
+.container {
+  border: solid 1px $text-color-main;
+  border-radius: 16px;
+  width: 312px;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    gap: 16px;
+    padding: 14px 30px 14px 24px;
+    align-items: center;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.lower_text {
+  font-size: 20px;
+  font-family: "Gadugi";
+  font-weight: bold;
+  @media only screen and (max-width: $mobile-screen) {
+    font-family: inherit;
+  }
+}

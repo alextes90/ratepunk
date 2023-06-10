@@ -1,0 +1,72 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/variables.scss";
+
+.img_container {
+  position: relative;
+  width: 144px;
+  height: 144px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin-top: 50px;
+  @media only screen and (max-width: $mobile-screen) {
+    gap: 48px;
+  }
+}
+
+.step_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 448px;
+  h4 {
+    color: $active-color;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .description_container {
+    width: 256px;
+  }
+  @media only screen and (max-width: $mobile-screen) {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    h4,
+    h3,
+    p {
+      text-align: center;
+    }
+    h4 {
+      font-family: "Gadugi";
+      font-size: 16px;
+      margin-top: 34px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .description_container {
+      width: 100%;
+    }
+  }
+}
+
+.flex_reverse {
+  flex-direction: row-reverse;
+  @media only screen and (max-width: $mobile-screen) {
+    flex-direction: column;
+  }
+}

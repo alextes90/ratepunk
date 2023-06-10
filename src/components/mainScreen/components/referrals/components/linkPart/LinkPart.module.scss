@@ -1,0 +1,53 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/variables.scss";
+
+.wrapper {
+  border: solid 1px $text-color-main;
+  border-radius: 16px;
+  background-color: $secondary-background;
+  height: 797px;
+  width: 544px;
+  padding: 64px;
+
+  h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 72px;
+    margin-bottom: 32px;
+  }
+  p {
+    font-size: 20px;
+    @media only screen and (max-width: $mobile-screen) {
+      font-size: 16px;
+    }
+  }
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 670px;
+    @media only screen and (max-width: $mobile-screen) {
+      font-size: 16px;
+    }
+  }
+  .limits {
+    color: #6d7a80;
+  }
+  @media only screen and (max-width: $mobile-screen) {
+    width: 345px;
+    height: 540px;
+    padding: 32px 16px;
+    h2 {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+
+    & > div {
+      height: 475px;
+    }
+  }
+}
