@@ -4,12 +4,17 @@ import Logo from "../../../logo/Logo";
 import MenuLinks from "./components/menuLinks/MenuLinks";
 import ModalMenu from "../modalMenu/ModalMenu";
 import styles from "./Header.module.scss";
+import { RemoveScroll } from "react-remove-scroll";
 
 export const Header = () => {
   const [isModal, setIsModal] = useState(false);
 
   if (isModal) {
-    return <ModalMenu setIsModal={setIsModal} />;
+    return (
+      <RemoveScroll>
+        <ModalMenu setIsModal={setIsModal} />
+      </RemoveScroll>
+    );
   }
 
   return (
