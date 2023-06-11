@@ -12,7 +12,7 @@ const Footer = () => {
           <span>
             <Logo />
           </span>
-          <p>
+          <p className={styles.container_description__paragraph}>
             Ratepunk compares hotel room prices across the major online travel
             agencies. When you search for a room, Ratepunk extension scans the
             top booking sites and runs a price comparison, so you can be
@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.container_flex}>
-          <h3>QUICK LINKS</h3>
+          <h3 className={styles.h3}>QUICK LINKS</h3>
           <ul className={styles.container_links}>
             <li>
               <Link href=''>Price Comparison</Link>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div className={styles.container_flex}>
           <div>
-            <h3>Contact</h3>
+            <h3 className={styles.h3}>Contact</h3>
             <div>
               <Image
                 src='./images/email-footer.svg'
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3>Social</h3>
+            <h3 className={styles.h3}>Social</h3>
             <ul className={styles.social_container}>
               {["instagram", "facebook", "linkedin", "twitter", "tiktok"].map(
                 (social) => {
@@ -64,7 +64,7 @@ const Footer = () => {
                     <li key={`${social}`}>
                       <Link href=''>
                         <div className={styles.social_container_item}>
-                          <div>
+                          <div className={styles.div}>
                             <Image
                               src={`./images/${social}.svg`}
                               alt={`${social}`}

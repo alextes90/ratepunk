@@ -1,0 +1,84 @@
+@import "../../../../../../../../../../styles/variables.scss";
+@import "../../../../../../../../../../styles/colors.scss";
+
+.img_container {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  @media only screen and (max-width: $mobile-screen) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.success_container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  p {
+    font-weight: 700;
+  }
+}
+
+.form {
+  display: flex;
+  .copy_button {
+    width: 96px;
+    background-color: $active-color;
+    border-bottom: solid $text-color-main 1px;
+    border-top: solid $text-color-main 1px;
+    border-right: solid $text-color-main 1px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .referral_input {
+    height: 64px;
+    width: 320px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: solid $text-color-main 1px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #6d7a80;
+  }
+  @media only screen and (max-width: $mobile-screen) {
+    flex-direction: column;
+    gap: 16px;
+    .referral_input {
+      width: 100%;
+      border-radius: 8px;
+      height: 56px;
+      padding-left: 16px;
+      font-size: 16px;
+    }
+    .copy_button {
+      width: 100%;
+      border-radius: 8px;
+      height: 56px;
+      border: solid $text-color-main 1px;
+    }
+  }
+}
+
+.fullscreen {
+  @media only screen and (max-width: $mobile-screen) {
+    display: none;
+  }
+}
+
+.mobile_screen {
+  display: none;
+  @media only screen and (max-width: $mobile-screen) {
+    display: inline;
+    font-size: 16px;
+  }
+}

@@ -38,9 +38,11 @@ const StepPart = () => {
               />
             </div>
             <div className={styles.description_container}>
-              <h4>STEP {index + 1}</h4>
-              <h3 className={`${caveat_brush.className}`}>{step.header}</h3>
-              <p>{step.p}</p>
+              <h4 className={styles.h4}>STEP {index + 1}</h4>
+              <h3 className={`${caveat_brush.className} ${styles.h3}`}>
+                {step.header}
+              </h3>
+              <p className={styles.p}>{step.p}</p>
             </div>
           </div>
         );

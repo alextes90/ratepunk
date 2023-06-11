@@ -9,18 +9,20 @@
   width: 544px;
   padding: 64px;
 
-  h2 {
+  .title {
     font-size: 48px;
     text-transform: uppercase;
     line-height: 72px;
     margin-bottom: 32px;
   }
-  p {
+
+  .description {
     font-size: 20px;
     @media only screen and (max-width: $mobile-screen) {
       font-size: 16px;
     }
   }
+
   & > div {
     display: flex;
     flex-direction: column;
@@ -35,19 +37,22 @@
   }
   @media only screen and (max-width: $mobile-screen) {
     width: 345px;
-    height: 540px;
+    height: 100%;
     padding: 32px 16px;
-    h2 {
+    .title {
       font-size: 32px;
       line-height: 48px;
-      margin-bottom: 24px;
+      margin-bottom: 15px;
     }
-    p {
+    .description {
       font-size: 16px;
+    }
+    .referral_container {
+      margin-bottom: 72px;
     }
 
     & > div {
-      height: 475px;
+      height: 100%;
     }
   }
 }

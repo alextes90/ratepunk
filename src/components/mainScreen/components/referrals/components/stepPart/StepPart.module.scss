@@ -22,19 +22,19 @@
   justify-content: space-between;
   align-items: center;
   width: 448px;
-  h4 {
+  .h4 {
     color: $active-color;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 16px;
   }
-  h3 {
+  .h3 {
     font-size: 32px;
     line-height: 48px;
     margin-bottom: 16px;
   }
 
-  p {
+  .p {
     font-size: 20px;
     line-height: 32px;
   }
@@ -45,17 +45,17 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    h4,
-    h3,
-    p {
+    .h4,
+    .h3,
+    .p {
       text-align: center;
     }
-    h4 {
+    .h4 {
       font-family: "Gadugi";
       font-size: 16px;
       margin-top: 34px;
     }
-    p {
+    .p {
       font-size: 16px;
     }
     .description_container {
