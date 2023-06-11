@@ -26,19 +26,19 @@ const Footer = () => {
           <h3>QUICK LINKS</h3>
           <ul className={styles.container_links}>
             <li>
-              <Link href='#'>Price Comparison</Link>
+              <Link href=''>Price Comparison</Link>
             </li>
             <li>
-              <Link href='#'>Chrome Extension</Link>
+              <Link href=''>Chrome Extension</Link>
             </li>
             <li>
-              <Link href='#'>How it Works</Link>
+              <Link href=''>How it Works</Link>
             </li>
             <li>
-              <Link href='#'>Ratepunk Blog</Link>
+              <Link href=''>Ratepunk Blog</Link>
             </li>
             <li>
-              <Link href='#'>Privacy Policy</Link>
+              <Link href=''>Privacy Policy</Link>
             </li>
           </ul>
         </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                 (social) => {
                   return (
                     <li key={`${social}`}>
-                      <Link href='#'>
+                      <Link href=''>
                         <div className={styles.social_container_item}>
                           <div>
                             <Image

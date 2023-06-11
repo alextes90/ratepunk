@@ -10,10 +10,10 @@ const MenuLinks = () => {
         </Link>
       </li>
       <li>
-        <Link href='#'>Price Comparison</Link>
+        <Link href=''>Price Comparison</Link>
       </li>
       <li>
-        <Link href='#'>Blog</Link>
+        <Link href=''>Blog</Link>
       </li>
     </ul>
   );
